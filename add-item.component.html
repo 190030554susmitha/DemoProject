@@ -1,0 +1,95 @@
+<div>
+  <mat-tab-group class="addItemForm">
+    <mat-tab label="Add Book">
+      <form class="actionForm">
+        <mat-form-field>
+          <input matInput id="bookTitle" placeholder="Enter Book Title">
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput id="bookIsbn" placeholder="Enter ISBN">
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-select placeholder="Select Sector">
+            <mat-option [value]="'Novels'">Novels</mat-option>
+            <mat-option [value]="'Novels'">Novels</mat-option>
+            <mat-option [value]="'Novels'">Novels</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput [matDatepicker]="publDateBook" placeholder="Publication date">
+          <mat-datepicker-toggle matSuffix [for]="publDateBook"></mat-datepicker-toggle>
+          <mat-datepicker #publDateBook></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="Enter Author">
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="Enter Publisher">
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput type="number" placeholder="Page Count">
+        </mat-form-field>
+
+        <button mat-icon-button style="width:40px">
+          <button mat-fab color="primary">Add <i class="material-icons">add</i></button>
+        </button>
+      </form>
+    </mat-tab>
+
+    <mat-tab label="Add DVD">
+        <form class="actionForm">
+          <mat-form-field>
+            <input matInput id="dvdTitle" placeholder="Enter DVD Title">
+          </mat-form-field>
+  
+          <mat-form-field>
+            <input matInput id="dvdIsbn" placeholder="Enter ISBN">
+          </mat-form-field>
+  
+          <mat-form-field>
+            <mat-select placeholder="Select Sector">
+              <mat-option [value]="'Novels'">Novels</mat-option>
+              <mat-option [value]="'Novels'">Novels</mat-option>
+              <mat-option [value]="'Novels'">Novels</mat-option>
+            </mat-select>
+          </mat-form-field>
+  
+          <mat-form-field>
+            <input matInput [matDatepicker]="dvdPublDate" placeholder="Published date">
+            <mat-datepicker-toggle matSuffix [for]="dvdPublDate"></mat-datepicker-toggle>
+            <mat-datepicker #dvdPublDate></mat-datepicker>
+          </mat-form-field>
+  
+          <mat-form-field>
+            <input matInput placeholder="Enter Producer">
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput placeholder="Available Languages">
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput placeholder="Available Subtitles">
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput placeholder="Enter Actors">
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput placeholder="Enter Duration">
+          </mat-form-field>
+
+          <button mat-icon-button style="width:40px">
+            <button mat-fab color="primary">Add <i class="material-icons">add</i></button>
+          </button>
+        </form>
+      </mat-tab>
+  </mat-tab-group>
+</div>
